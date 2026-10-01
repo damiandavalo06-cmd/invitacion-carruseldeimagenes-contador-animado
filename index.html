@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>29° Cumpleaños - Damián</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Carrusel de Fondo -->
+    <div class="carousel-background">
+        <div class="slide active" style="background-image: url(1.jpeg);"></div>
+        <div class="slide" style="background-image: url(2.jpeg);"></div>
+        <div class="slide" style="background-image: url(3.jpeg);"></div>
+        <div class="slide" style="background-image: url(4.jpeg);"></div>
+    </div>
+    
+    <!-- Capa de oscurecimiento para lectura clara -->
+    <div class="overlay"></div>
+
+    <!-- Contenido de la Tarjeta (Tu código anterior) -->
+    <main class="card-container">
+        <header class="header">
+            <span class="subtitle-badge">ESTÁS INVITADO</span>
+            <h1>DAMIÁN</h1>
+            <p class="age-title">MIS 29 AÑOS</p>
+            <div class="divider"></div>
+        </header>
+
+        <section class="info-section">
+            <div class="info-item">
+                <i class="fa-regular fa-calendar-days"></i>
+                <div>
+                    <strong>Lunes 27 de Julio de 2027</strong>
+                    <span>21:00 HRS</span>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    <strong>Carlos Outes 269</strong>
+                    <a href="https://maps.google.com" target="_blank" class="map-link">Ver ubicación en Maps <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="info-item dresscode-box">
+                <i class="fa-solid fa-user-tie"></i>
+                <div>
+                    <strong>DRESS CODE</strong>
+                    <span>Full Black (Negro elegante)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- NUEVO CONTADOR CON CANVAS Y GLOBOS -->
+<section class="countdown-section">
+    <!-- Canvas transparente donde explotará el confeti -->
+    <canvas id="confetti-canvas"></canvas>
+    
+    <p class="countdown-label">✨ FALTAN PARA LA FIESTA ✨</p>
+    
+    <div class="c-container">
+        <div class="c-items">
+            <span id="dias" class="c-number">00</span>
+            <span class="c-text">DÍAS</span>
+        </div>
+        <div class="c-items">
+            <span id="horas" class="c-number">00</span>
+            <span class="c-text">HORAS</span>
+        </div>
+        <div class="c-items">
+            <span id="minutos" class="c-number">00</span>
+            <span class="c-text">MIN</span>
+        </div>
+        <div class="c-items">
+            <span id="segundos" class="c-number">00</span>
+            <span class="c-text">SEG</span>
+        </div>
+    </div>
+
+    <!-- Emojis flotantes en las esquinas -->
+    <div class="balloon balloon-left">🎈</div>
+    <div class="balloon balloon-right">🎉</div>
+</section>
+        <section class="action-section">
+            <p class="question">¿Nos acompañas a celebrar?</p>
+            <a href="https://wa.me/5493874409475?text=Dami%C3%A1n%20confirmo%20mi%20asistencia%20a%20tu%20cumplea%C3%B1os%20%F0%9F%8E%89%F0%9F%8E%88" target="_blank" class="btn-confirm">
+                <i class="fa-brands fa-whatsapp"></i> CONFIRMAR ASISTENCIA
+            </a>
+            <p class="deadline">Por favor confirmar antes del 25/07/2027</p>
+        </section>
+
+        <footer>
+            <span>¿Quieres una web para tu evento?</span>
+            <a href="https://wa.me/5493874409475?text=Hola%20Dami%C3%A1n%20me%20interesa%20adquirir%20una%20invitaci%C3%B3n%20digital%20para%20mi%20evento%20(boda,%20cumplea%C3%B1os,%2015%20a%C3%B1os,%20comuni%C3%B3n,%20confirmaci%C3%B3n)" target="_blank">Contactar Diseñador</a>
+        </footer>
+    </main>
+
+    <!-- Librería externa para lanzar confeti/fuegos artificiales -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    
+    <script src="./scrip.js"></script>
+</body>
+</html>
